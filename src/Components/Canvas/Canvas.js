@@ -1,22 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import ProfileCard from "../ProfileCard";
+import HomePageCard from "../HomePageCard";
+import Profile from "../Profile";
+import Projects from "../Projects";
 import { Route } from "react-router-dom";
 
 const CanvasBox = styled.div`
-  ${"" /* border: 1px solid red; */}
-  width: 100%;
-  top: 10vh;
-  height: 90vh;
+  top: 6vh;
   width: 100vw;
+  height: 100%;
   position: fixed;
   text-align: center;
+  background-color: #f2f2f2;
+  overflow: auto;
 `;
 
 const Canvas = () => {
   return (
     <CanvasBox>
-      <Route path="/" exact component={ProfileCard} />
+      <Route path="/" exact component={HomePageCard} />
+      <Route path="/profile" exact component={Profile} />
+      <Route path="/projects" exact component={Projects} />
     </CanvasBox>
   );
 };

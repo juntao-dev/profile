@@ -19,7 +19,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  margin: 10px;
+  margin: 1rem;
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
