@@ -23,6 +23,16 @@ const Li = styled.li`
   text-decoration: none;
   list-style-type: none;
   display: inline-block;
+
+  &:hover {
+    transform: translateY(-10%);
+    box-shadow: 10px 10px 5px grey;
+  }
+
+  &:active {
+    transform: translateY(-5%);
+    box-shadow: 5px 5px 2px grey;
+  }
 `;
 
 const linkStyles = {

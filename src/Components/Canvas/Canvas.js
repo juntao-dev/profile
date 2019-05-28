@@ -3,6 +3,7 @@ import styled from "styled-components";
 import HomePageCard from "../HomePageCard";
 import Profile from "../Profile";
 import Projects from "../Projects";
+import Blog from "../Blog";
 import { Route } from "react-router-dom";
 
 const CanvasBox = styled.div`
@@ -21,6 +22,7 @@ const Canvas = () => {
       <Route path="/" exact component={HomePageCard} />
       <Route path="/profile" exact component={Profile} />
       <Route path="/projects" exact component={Projects} />
+      <Route path="/blog" exact component={Blog} />
     </CanvasBox>
   );
 };
