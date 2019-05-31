@@ -15,6 +15,15 @@ const BlogCardBox = styled.div`
   & p {
     margin: 1rem;
   }
+
+  @media (max-width: 750px) {
+    width: 80vw;
+  }
+
+  @media (max-width: 400px) {
+    width: 90vw;
+    font-size: 1rem;
+  }
 `;
 
 class BlogCard extends React.Component {

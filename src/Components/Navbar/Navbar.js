@@ -12,6 +12,10 @@ const NavbarBox = styled.div`
   text-align: center;
   background: rgb(255, 255, 255);
   color: black;
+
+  @media (max-width: 400px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const Ul = styled.ul`

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const ProfileCardBox = styled.div`
-  padding: 5rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -10,32 +9,36 @@ const ProfileCardBox = styled.div`
   text-align: center;
 `;
 
-const InlineBlockDiv = styled.div`
-  display: inline-block;
-`;
-
 const HeaderPrimary = styled.div`
+  justify-self: center;
   width: 100%;
   align-items: center;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: grid;
   justify-items: center;
+  grid-gap: 3rem;
 `;
 
 const HeaderPrimaryBox = styled.div`
+  justify-items: center;
   display: inline-block;
-  width: 25vw;
+  width: 100%;
   display: grid;
-  grid-template-columns: 25% auto;
   align-items: center;
 `;
 
 const PersonalStatement = styled.div`
-  margin: 0;
-  font-size: 1.7rem;
+  padding: 10rem;
+  display: inline-block;
+  font-size: 1.5rem;
   font-style: italic;
   width: 100%;
+
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
 `;
 
 class HomePageCard extends React.Component {
@@ -56,23 +59,19 @@ class HomePageCard extends React.Component {
     return (
       <ProfileCardBox>
         <HeaderPrimary>
+          <HeaderPrimaryBox>Juntao Zeng</HeaderPrimaryBox>
           <HeaderPrimaryBox>
-            <InlineBlockDiv>
-              <img
-                src="https://img.icons8.com/color/48/000000/linkedin.png"
-                alt="linkedin logo"
-                onClick={this.handleLinkedInIconClick}
-                style={{ cursor: "pointer" }}
-              />
-            </InlineBlockDiv>
-            <InlineBlockDiv>Juntao Zeng</InlineBlockDiv>
+            <img
+              src="https://img.icons8.com/color/48/000000/linkedin.png"
+              alt="linkedin logo"
+              onClick={this.handleLinkedInIconClick}
+              style={{ cursor: "pointer" }}
+            />
           </HeaderPrimaryBox>
         </HeaderPrimary>
         <PersonalStatement>
-          Living in Melbourne, recent IT Graduate from Monash University,
-          seeking career opportunities in Front End Web Development and Software
-          Engineering. I enjoy reading and travelling. Passionate about coding
-          and learning new things.
+          Recent IT Graduate from Monash University, seeking career
+          opportunities in Front End Web Development and Software Engineering.
         </PersonalStatement>
       </ProfileCardBox>
     );

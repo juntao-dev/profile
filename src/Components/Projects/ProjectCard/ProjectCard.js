@@ -12,6 +12,22 @@ const ProjectCardBox = styled.div`
   text-align: left;
   box-shadow: 10px 10px 5px grey;
   background-color: #fff0b3;
+
+  @media (max-width: 1300px) {
+    width: 60vw;
+  }
+
+  @media (max-width: 1080px) {
+    width: 80vw;
+  }
+
+  @media (max-width: 830px) {
+    width: 90vw;
+  }
+
+  @media (max-width: 725px) {
+    grid-template-columns: 0 1fr;
+  }
 `;
 
 const ProjectCardLeft = styled.div`
@@ -20,6 +36,12 @@ const ProjectCardLeft = styled.div`
   & img {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  @media (max-width: 725px) {
+    visibility: hidden;
+    position: float:
+    width: 0;
   }
 `;
 
