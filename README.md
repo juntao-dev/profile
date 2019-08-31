@@ -1,4 +1,4 @@
-# Personal Profile
+# Personal Profile [![Build Status](https://travis-ci.org/juntao-dev/profile.svg?branch=master)](https://travis-ci.org/juntao-dev/profile)
 
 Demo URL: [https://juntao-profile.herokuapp.com/](https://juntao-profile.herokuapp.com/)
 (_Note: It might require a minute or two for the server to run._)
